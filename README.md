@@ -1,10 +1,10 @@
-UART Controller in Verilog
+## UART Controller in Verilog
 
-Overview
+# Overview
 
 This project implements a Universal Asynchronous Receiver-Transmitter (UART) controller in Verilog. The design includes a baud rate generator, transmitter, receiver, and testbench for verification. The UART controller facilitates serial communication between digital systems.
 
-Features
+# Features
 
 Baud rate generation for precise timing
 
@@ -16,7 +16,7 @@ FIFO buffer for efficient data handling
 
 Testbench for functional verification
 
-File Structure
+## File Structure
 
 ├── baudRateGenerator.v     # Baud rate generator module
 ├── defines.v               # Macro definitions
@@ -26,7 +26,7 @@ File Structure
 ├── uart_tx_controller.v    # UART transmitter module
 └── README.md               # Project documentation
 
-Setup & Simulation
+# Setup & Simulation
 
 Prerequisites
 
@@ -36,18 +36,13 @@ Icarus Verilog (iverilog) for compilation
 
 GTKWave for waveform visualization
 
-Steps to Run the Simulation
-
-Clone the repository:
-
-git clone https://github.com/your-repo/uart-controller.git
-cd uart-controller
+## Steps to Run the Simulation
 
 Compile the Verilog files:
 
 iverilog -o uart_testbench testbench.v
 
-Run the simulation:
+# Run the simulation:
 
 vvp uart_testbench
 
@@ -55,7 +50,7 @@ View waveforms (optional):
 
 gtkwave dump.vcd
 
-Configuration
+# Configuration
 
 Modify defines.v to configure baud rate, data bits, and other UART parameters:
 
@@ -63,6 +58,6 @@ Modify defines.v to configure baud rate, data bits, and other UART parameters:
 `define BAUD_RATE  115200    // Standard baud rate
 `define DATA_BITS  8         // Number of data bits
 
-Contributing
+# Contributing
 
 Feel free to fork this repository and submit pull requests for improvements!
